@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Surprise ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+        .box {
+            background: rgba(0,0,0,0.2);
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+        }
+        h1, h2, p {
+            margin-bottom: 20px;
+        }
+        button {
+            background: #ff4d6d;
+            border: none;
+            padding: 12px 25px;
+            margin: 8px;
+            font-size: 16px;
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff1e4d;
+            transform: scale(1.05);
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+
+    <!-- START SCREEN -->
+    <div id="screen1">
+        <h1>💖 Hey You 💖</h1>
+        <button onclick="goToScreen(2)">START</button>
+    </div>
+
+    <!-- WELCOME SCREEN -->
+    <div id="screen2" class="hidden">
+        <h2>WELCOME WELCOME 😍</h2>
+        <p>SO FINNALY IT'S HERE!! ✨</p>
+        <button onclick="goToScreen(3)">NEXT</button>
+    </div>
+
+    <!-- QUESTION 1 -->
+    <div id="screen3" class="hidden">
+        <p>BEFORE YOU GET YOUR MESSAGE YOU SHOULD ANSWER A QUESTION!!! 😌</p>
+        <button onclick="goToScreen(4)">OKKK</button>
+        <button onclick="goToScreen(4)">SARIIIII</button>
+        <button onclick="goToScreen(4)">SAREEEE</button>
+        <button onclick="goToScreen(4)">AIYTHUU</button>
+    </div>
+
+    <!-- QUESTION 2 -->
+    <div id="screen4" class="hidden">
+        <p>
+            YOU LOVE NANI MORE OR MAGAR,<br>
+            WHOM DO YOU LOVE MORE?? 😏💖
+        </p>
+        <p style="font-size:14px;">
+            (REPLY HIM IN INSTAGRAM 📸)
+        </p>
+        <button onclick="goToScreen(5)">NEXT</button>
+    </div>
+
+    <!-- BIRTHDAY WISH -->
+    <div id="screen5" class="hidden">
+        <h1>🎉 HAPPPYYYYY BIRTHDAYYYYY 🎉</h1>
+        <h2>PICHIIIIIIIIIII 🥰💖</h2>
+        <p>
